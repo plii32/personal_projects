@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<header>Lights Out! Final</header>
+	<p> Randomize the table first to get started! Have fun! </p>
+	  <style>
+	     table {
+	             border: 1px solid pink;
+	             border-collapse: collapse;
+	             width:100%;
+				 
+	           }
+
+	     td    {
+	             border:2px solid;
+	             width: 100px;
+	             height:100px;
+	           }
+	
+	     header {
+	              text-align: center;
+	              font-family: "Times New Family" Times, serif;
+	              font-size: 80px;
+				  font-style: italic;
+	            }
+	
+	     p      {
+	              text-align:center;
+	              font-family: "Times New Family" Times, serif;
+	              font-size: 40px;
+				  font-style: oblique;
+	            } 
+		.align {
+                  grid-column: 2;
+				  grid-row: 2/5;
+				  text-align: center;
+
+		       }
+	
+
+	    .button {
+
+	              background-color: lemonchiffon;
+	              border: 1px solid;
+	              width: 70px;
+	              height:70px;
+	            }
+	body{
+		background-color:lightcoral;
+		
+	}
+
+	</style>
+	<script type="text/javascript" src="lightsout.js"></script>
+</head>
+	
+<body>
+	
+	<br></br>
+	<div class="align">
+	  <tr>
+		<button id="box1" class="button" onclick="Flips(1)"></button>
+		<button id="box2" class="button" onclick="Flips(2)"></button>
+		<button id="box3" class="button" onclick="Flips(3)"></button>	
+		<button id="box4" class="button" onclick="Flips(4)"></button>	
+		<button id="box5" class="button" onclick="Flips(5)"></button>
+	  </tr>
+	<div>
+	  <tr>
+		<button id="box6" class="button" onclick="Flips(6)"></button>
+		<button id="box7" class="button" onclick="Flips(7)"></button>
+		<button id="box8" class="button" onclick="Flips(8)"></button>	
+		<button id="box9" class="button" onclick="Flips(9)"></button>	
+		<button id="box10" class="button" onclick="Flips(10)"></button>
+	 </tr>
+	<div>
+	<tr>
+		<button id="box11" class="button" onclick="Flips(11)"> </button>
+		<button id="box12" class="button" onclick="Flips(12)"> </button>
+		<button id="box13" class="button" onclick="Flips(13)"> </button>	
+		<button id="box14" class="button" onclick="Flips(14)"> </button>	
+		<button id="box15" class="button" onclick="Flips(15)"> </button>
+	</tr>
+	<div>
+	<tr>
+		<button id="box16" class="button" onclick="Flips(16)"> </button>
+		<button id= "box17" class="button" onclick="Flips(17)"> </button>
+		<button id= "box18" class="button" onclick="Flips(18)"> </button>	
+		<button id= "box19" class="button" onclick="Flips(19)"> </button>	
+		<button id= "box20" class="button" onclick="Flips(20)"> </button>
+	</tr>
+
+	<div>
+	<tr>
+		<button id="box21" class="button" onclick="Flips(21)"> </button>
+		<button id= "box22" class="button" onclick="Flips(22)"> </button>
+		<button id= "box23" class="button" onclick="Flips(23)"> </button>	
+		<button id= "box24" class="button" onclick="Flips(24)"> </button>	
+		<button id= "box25" class="button" onclick="Flips(25)"> </button>
+	</tr>
+    <br></br>
+	<button onclick="newTable()">Randomize Table</button></br>
+</body>
+
+</html>
