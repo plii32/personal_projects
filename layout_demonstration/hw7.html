@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="hw7.css">
+</head>
+  <body>
+    <div class="parent">
+       <div class="header">Look what I can do</div>
+       <div class="panel left">
+         <h1>Navigation</h1>
+         <p>
+           <a href="http://www.eak287cs212.com/">Home page</a></br>
+           <a href="http://www.eak287cs212.com/cs212/homework/2">Intro to HTML</a></br>
+           <a href="http://www.eak287cs212.com/cs212/homework/3">Intro to Fonts</a></br>
+           <a href="http://www.eak287cs212.com/cs212/homework/4">Intro to CSS</a></br>
+         </p>
+       </div>
+       <div class="mainbody">
+        <h1>Sum calculator</h1>
+        <form>
+           <input type="text" id="num1"> + <input type="text" id="num2">
+           <input type="button" value="=" onclick="summing()">
+           <input type="text" id="=" onclick="summing()">
+        </form>
+        <script>
+           function summing() {
+               let num1 = document.getElementById("num1").value;
+               let num2 = document.getElementById("num2").value;
+               let addition = Number(num1) + Number(num2);
+               document.getElementById("=").value = addition;
+           } 
+        </script>
+       </div>
+
+       <div class="panel right">
+         <h1>Having skin trouble? Check this out!</h1>
+         <p>
+            <a href="https://www.amazon.com/Mighty-Patch-Hydrocolloid-Absorbing-count/dp/B074PVTPBW/ref=zg-bs_beauty_sccl_2/146-8592292-2062662?pd_rd_w=G651w&content-id=amzn1.sym.1e7b1982-fb44-47aa-b1ce-d356a8609d66&pf_rd_p=1e7b1982-fb44-47aa-b1ce-d356a8609d66&pf_rd_r=Z5TY5QMAA79AYSMD7CWT&pd_rd_wg=Rjk5e&pd_rd_r=e678e394-abcb-4690-b0d3-15a5b44993a4&pd_rd_i=B074PVTPBW&psc=1">
+               <img alt="MightyPatches" src="https://i5.walmartimages.com/asr/de61ab80-a8f0-45f4-84c2-8fd928a5aa24_1.61d27e11d500840e72b3777dee610b24.jpeg"
+                width=350" height="350">
+            </a>
+         </p>
+       </div>
+       <div class="footer">
+        <h1>Addendum</h1>
+        <p>For my javascript portion of the assignment, I decided to tackle a simple problem in which I could use resources in case I was still lost.</p></br>
+        <p>After I came across a sum calculator that was made from javascript, I thought it suited the layout of the page so well. Also, have ever just needed to have something add two numbers real quick?</p></br>
+        <p>However, without all the hocus pocus with other operations? Well, I thought that this calculator brought simplicity but also a nice button at the same time.</p></br>
+        <p>It was hard to write at first, since I knew nothing about javascript and I was confused about the formatting. Luckily, there are many websites that showed me how to do it</p></br>
+        <p>Another problem I had was figuring out how to put each content into its own specific panel, but after some experimenting, I figured out that I can break down each section and put the material in between</p></br>
+        <p>each section.
+    </div>
+  </body>
